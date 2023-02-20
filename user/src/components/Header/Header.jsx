@@ -21,7 +21,7 @@ const Header = () => {
                 style={{ marginBottom: 4, marginTop: 4 }}
               >
                 <li id="BodyContent_ctl00_ctl03_liLogin">
-                  <a href="/login.htm#login">Đăng nhập</a>
+                  <a href="/login">Đăng nhập</a>
                 </li>
                 <li
                   id="BodyContent_ctl00_ctl03_liRegister"
@@ -225,7 +225,7 @@ const Header = () => {
                   <a href="/lich-chieu.htm">LỊCH CHIẾU THEO RẠP</a>
                 </li>
                 <li id="BodyContent_ctl00_ctl03_rptMenu2_liNoChild_1">
-                  <a href="/phim.htm">PHIM</a>
+                  <a href="/movies">PHIM</a>
                 </li>
                 <li id="BodyContent_ctl00_ctl03_rptMenu2_liNoChild_2">
                   <a href="/thong-tin-rap.htm">RẠP</a>

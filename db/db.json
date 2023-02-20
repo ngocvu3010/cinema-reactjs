@@ -1,0 +1,34 @@
+{
+  "movies": [
+    {"id": 1,
+     "name": "Người Kiến và chiến binh ong",
+     "categories": ["Hành động", "Phiêu lưu"],
+     "times": 125,
+     "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+    },
+    {"id": 2,
+      "name": "Người Kiến và chiến binh ong",
+      "categories": ["Hành động", "Phiêu lưu"],
+      "times": 125,
+       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+     },
+     {"id": 3,
+      "name": "Người Kiến và chiến binh ong",
+      "categories": ["Hành động", "Phiêu lưu"],
+      "times": 125,
+       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+     },
+     {"id": 4,
+      "name": "Người Kiến và chiến binh ong",
+      "categories": ["Hành động", "Phiêu lưu"],
+      "times": 125,
+      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+     },
+     {"id": 5,
+      "name": "Người Kiến và chiến binh ong",
+      "categories": ["Hành động", "Phiêu lưu"],
+      "times": 125,
+      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+    }
+  ]
+}
