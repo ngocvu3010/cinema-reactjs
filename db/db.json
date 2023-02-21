@@ -2,33 +2,55 @@
   "movies": [
     {"id": 1,
      "name": "Người Kiến và chiến binh ong",
-     "categories": ["Hành động", "Phiêu lưu"],
+     "category": 1,
      "times": 125,
      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
     },
     {"id": 2,
-      "name": "Người Kiến và chiến binh ong",
-      "categories": ["Hành động", "Phiêu lưu"],
+      "name": "Nhà bà nữ",
+      "category": 5,
       "times": 125,
-       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f01%2f04%2f321986917-1318882765574216-8856448085308688207-n-copy-122426-040123-97-183645-040123-51.jpg"]
      },
      {"id": 3,
-      "name": "Người Kiến và chiến binh ong",
-      "categories": ["Hành động", "Phiêu lưu"],
+      "name": "Siêu lừa gặp siêu lầy",
+      "category": 3,
       "times": 125,
-       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f17%2f400x633-1-141958-170223-98.jpg"]
      },
      {"id": 4,
-      "name": "Người Kiến và chiến binh ong",
-      "categories": ["Hành động", "Phiêu lưu"],
+      "name": "Titanic",
+      "category": 2,
       "times": 125,
-      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f02%2ftitanic-094654-020223-76.jpg"]
      },
      {"id": 5,
-      "name": "Người Kiến và chiến binh ong",
-      "categories": ["Hành động", "Phiêu lưu"],
+      "name": "Muốn gặp anh",
+      "category": 4,
       "times": 125,
-      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f09%2fz4095958227846-f20070b4efe20292b922f81421e88811-141654-090223-26.jpg"]
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Hành động"
+    },
+    {
+      "id": 2,
+      "name": "Phiêu lưu"
+    },
+    {
+      "id": 3,
+      "name": "Hài"
+    },
+    {
+      "id": 4,
+      "name": "Tình cảm"
+    },
+    {
+      "id": 5,
+      "name": "Gia đình"
     }
   ]
 }
