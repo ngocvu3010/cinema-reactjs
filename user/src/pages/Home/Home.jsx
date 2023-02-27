@@ -1,13 +1,16 @@
-import React from 'react'
-import Header from '../../components/Header/Header';
+import React from "react";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import './style.scss'
 
 const Home = () => {
   return (
     <>
       <Header />
-      <div>Home</div>
+      <main className="main">Home</main>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
