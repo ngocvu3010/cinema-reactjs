@@ -1,0 +1,33 @@
+@use "../../scss/_variable";
+
+.menu {
+  &__list {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: large;
+
+    &:hover {
+      color: #337ab7;
+    }
+  }
+}
+
+.dropdown {
+  &__info {
+    // background: #f9f9f9;
+    // color: #595f65;
+    // border: solid 1px #ccc;
+    // border-radius: 16px !important;
+    // float: left;
+  }
+}
