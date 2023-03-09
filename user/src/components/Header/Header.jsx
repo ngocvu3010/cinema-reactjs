@@ -1,6 +1,7 @@
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../../img/logo.png";
 import UKImage from "../../img/united-kingdom.png";
 import "./style.scss";
@@ -183,9 +184,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="menu__item">
-                <a href="#" className="menu__link">
+                <Link to="/movies" className="menu__link">
                   PHIM
-                </a>
+                </Link>
               </li>
               <li className="menu__item">
                 <a href="#" className="menu__link">
