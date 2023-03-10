@@ -87,5 +87,13 @@
       "id": 5,
       "name": "Gia đình"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "email": "Bob@cinema.com",
+      "password": "123123"
+    }
   ]
 }

@@ -8,7 +8,7 @@ import Modal from "../../components/MovieDetail/Modal";
 import MovieInfo from "../../components/MovieDetail/MovieInfo";
 import ShowTime from "../../components/MovieDetail/ShowTime";
 
-const MovieView = () => {
+const MovieView = ({currentUser}) => {
     const { slug } = useParams();
     const [movie, setMovie] = useState({})
     const [openModal, setOpenModal] = useState(false);
@@ -22,11 +22,11 @@ const MovieView = () => {
         document.title = movie?.name;
     return (
     <>
-        <Header />
+        <Header currentUser={currentUser} />
         <div className="container pt-5 movie-detail">
             <h3 className="breadcrumbs margin-bottom-20">
-                <Link to="/">Trang chủ</Link> >
-                <Link to="/movies">Phim</Link> >
+                <Link to="/">Trang chủ</Link>
+                <Link to="/movies">Phim</Link>
                 <span> {movie?.name} </span></h3>
             <div className="row">
                 <div className="col-lg-3 col-md-4 col-sm-4 col-xs-16">
