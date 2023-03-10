@@ -6,32 +6,54 @@ import Logo from "../../img/logo.png";
 import UKImage from "../../img/united-kingdom.png";
 import "./style.scss";
 
-const Header = () => {
+const Header = ({currentUser}) => {
+  const handleLogOut = () => {
+    sessionStorage.setItem('user_id', '');
+    window.location.replace(process.env.REACT_APP_HOST_VIEW +"/login");
+  }
+
   return (
     <>
-      <div className="bg-black">
-        <div className="container">
-          <ul className="d-flex justify-content-end align-items-center py-1">
-            <li className="px-2">
-              <a className="text-decoration-none text-white" href="/login">
-                Đăng nhập
-              </a>
-            </li>
-            <li className="px-2 border-start">
-              <a
-                className="text-decoration-none text-white"
-                href="/login#register"
-              >
-                Đăng ký
-              </a>
-            </li>
-            <li className="d-flex align-items-center px-2">
-              <img src={UKImage} alt="united-kingdom" />
-            </li>
-          </ul>
+      {!currentUser ? (
+        <div className="bg-black">
+          <div className="container">
+            <ul className="d-flex justify-content-end align-items-center py-1">
+              <li className="px-2">
+                <a className="text-decoration-none text-white" href="/login">
+                  Đăng nhập
+                </a>
+              </li>
+              <li className="px-2 border-start">
+                <a
+                  className="text-decoration-none text-white"
+                  href="/login#register"
+                >
+                  Đăng ký
+                </a>
+              </li>
+              <li className="d-flex align-items-center px-2">
+                <img src={UKImage} alt="united-kingdom" />
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="bg-black">
+          <div className="container">
+            <ul className="d-flex justify-content-end align-items-center py-1">
+              <li className="px-2">
+                <span className="text-decoration-none text-white">Wellcome {currentUser.name}</span>
+              </li>
 
+              <li className="px-2 border-start">
+                <a className="text-decoration-none text-white" href="#" onClick={handleLogOut}>
+                  Đăng xuất
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      )}
       <div className="border-bottom">
         <div className="container">
           <div className="d-flex justify-content-between align-items-stretch gap-5">
