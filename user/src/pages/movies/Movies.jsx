@@ -6,6 +6,7 @@ import Sidebar from "../../components/Sidebar/Sidebar";
 import './movies.scss'
 import {MOVIES_PER_PAGE} from '../../constants/index'
 import SortMovieName from "../../components/sort/SortMovieName";
+import { Link } from "react-router-dom";
 
 
 const Movies = () => {
@@ -20,7 +21,7 @@ const Movies = () => {
 
   useEffect(() => {
     const movie_name = debouncedSearchTerm === '' ? '' : `name_like=${debouncedSearchTerm}&`;
-    const categories = selectCategories.length ? (selectCategories.map((i) => "category=" +i.toString()).join("&").concat("&")) : ''
+    const categories = selectCategories.length ? (selectCategories.map((i) => "categoryId=" +i.toString()).join("&").concat("&")) : ''
     const paginate = `_page=${selectedPage}&_limit=${MOVIES_PER_PAGE}&`
     const selectSort = `_sort=name&_order=${sortMovieName}`
     const host = process.env.REACT_APP_HOST
@@ -36,7 +37,6 @@ const Movies = () => {
     debouncedSearchTerm,
     selectCategories,
     sortMovieName])
-
   useEffect(() => {
     const url = process.env.REACT_APP_HOST + '/categories'
     fetch(url)
@@ -47,7 +47,7 @@ const Movies = () => {
 
   const category_list = (movie) => {
     for (let i = 0; i < categories.length; i++) {
-      if (categories[i].id === movie.category) {
+      if (categories[i].id === movie.categoryId) {
         return  categories[i].name;
       }
     }
@@ -107,7 +107,7 @@ const Movies = () => {
                         <div className="col-lg-12 col-md-12 col-sm-8 col-xs-8">
                           <div className="film-info film-xs-info">
                               <h3 className="text-center text-sm-left text-xs-left bold margin-top-5 font-sm-18 font-xs-14" style={{maxHeight: 30+"px", minHeight: 30+"px"}}>
-                                <a href="javascript:void(0);">{movie.name}</a>
+                                <Link to={`/movies/${movie.slug}`}>{movie.name}</Link>
                               </h3>
                               <ul className="list-unstyled font-lg font-family-san font-sm-15 font-xs-14">
                                 <li style={{maxHeight: 50+"px"}}><span className="bold">

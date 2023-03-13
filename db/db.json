@@ -1,34 +1,69 @@
 {
   "movies": [
-    {"id": 1,
-     "name": "Người Kiến và chiến binh ong",
-     "category": 1,
-     "times": 125,
-     "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"]
+    {
+      "id": 1,
+      "name": "Người Kiến và chiến binh ong",
+      "slug": "nguoi-kien-va-chien-binh-ong",
+      "categoryId": 1,
+      "times": 125,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/bNmRS_qsE3o",
+      "premieres": "20/03/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f13%2funtitled-1-094732-130223-78.jpg"
+      ]
     },
-    {"id": 2,
+    {
+      "id": 2,
       "name": "Nhà bà nữ",
-      "category": 5,
+      "slug": "nha-ba-nu",
+      "categoryId": 5,
       "times": 125,
-       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f01%2f04%2f321986917-1318882765574216-8856448085308688207-n-copy-122426-040123-97-183645-040123-51.jpg"]
-     },
-     {"id": 3,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/A5Bjycb6v9c",
+      "premieres": "12/03/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f01%2f04%2f321986917-1318882765574216-8856448085308688207-n-copy-122426-040123-97-183645-040123-51.jpg"
+      ]
+    },
+    {
+      "id": 3,
       "name": "Siêu lừa gặp siêu lầy",
-      "category": 3,
+      "slug": "sieu-lua-gap-sieu-lay",
+      "categoryId": 3,
       "times": 125,
-       "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f17%2f400x633-1-141958-170223-98.jpg"]
-     },
-     {"id": 4,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/o75m1-A44Wo",
+      "premieres": "01/02/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f17%2f400x633-1-141958-170223-98.jpg"
+      ]
+    },
+    {
+      "id": 4,
       "name": "Titanic",
-      "category": 2,
+      "slug": "titanic",
+      "categoryId": 2,
       "times": 125,
-      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f02%2ftitanic-094654-020223-76.jpg"]
-     },
-     {"id": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/8lYocxcAB6I",
+      "premieres": "08/02/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f02%2ftitanic-094654-020233-76.jpg"
+      ]
+    },
+    {
+      "id": 5,
       "name": "Muốn gặp anh",
-      "category": 4,
+      "slug": "muon-gap-anh",
+      "categoryId": 4,
       "times": 125,
-      "images": ["https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f09%2fz4095958227846-f20070b4efe20292b922f81421e88811-141654-090223-26.jpg"]
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/JYgxCM1q6FE",
+      "premieres": "07/03/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f09%2fz4095958227846-f20070b4efe20292b922f81421e88811-141654-090223-26.jpg"
+      ]
     }
   ],
   "categories": [
