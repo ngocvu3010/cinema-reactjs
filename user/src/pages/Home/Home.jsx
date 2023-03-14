@@ -3,10 +3,10 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import './style.scss'
 
-const Home = () => {
+const Home = ({currentUser}) => {
   return (
     <>
-      <Header />
+      <Header  currentUser={currentUser}/>
       <main className="main">Home</main>
       <Footer />
     </>

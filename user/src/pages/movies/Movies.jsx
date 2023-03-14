@@ -9,7 +9,7 @@ import SortMovieName from "../../components/sort/SortMovieName";
 import { Link } from "react-router-dom";
 
 
-const Movies = () => {
+const Movies = ({currentUser}) => {
   const [movies, setMovies] = useState([])
   const [totalMovies, setTotalMovies] = useState('')
   const [selectedPage, setSelectedPage] = useState(1)
@@ -74,7 +74,7 @@ const Movies = () => {
 
   return (
     <>
-      <Header />
+      <Header  currentUser={currentUser} />
       <div className="container pt-5">
         <nav className="navbar bg-body-tertiary">
           <div className="container-fluid">

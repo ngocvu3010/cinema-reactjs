@@ -1,12 +1,50 @@
 import React, {useState} from 'react';
 import Header from '../../components/Header/Header';
+import { toast, ToastContainer } from 'react-toastify';
 
-const Login = () => {
+const Login = ({currentUser}) => {
   const [activeTab, setActiveTab] = useState("login");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const handleLogin = (e) => {
+    if (validate()) {
+      const url = process.env.REACT_APP_HOST + `/users?email=${email}&password=${password}`
+      fetch(url)
+      .then(res => res.json())
+      .then((user) => {
+        if (Object.keys(user).length === 0) {
+          toast.error('email or password are wrong!')
+        } else {
+          toast.success('login success <3')
+          sessionStorage.setItem('user_id', user[0].id)
+          window.location.replace(process.env.REACT_APP_HOST_VIEW + '/movies');
+        }
+      })
+      .catch((err) => {
+        toast.error("Login failed!")
+      })
+    }
+    e.preventDefault();
+  }
+
+  const validate = () => {
+    const result = true 
+    if (email === '' || email === null) {
+      toast.error("Email can't be blank!")
+      result = false
+    } else {
+      if (password === '' || password === null) {
+        toast.error("Password can't be blank!")
+        result = false
+      }
+    }
+    return result
+  }
 
   return (
     <>
-      <Header />
+      <ToastContainer />
+      <Header  currentUser={currentUser} />
       <div className="container">
         {/* TABS */}
         <div
@@ -40,6 +78,8 @@ const Login = () => {
                   <div className="input-icon">
                     <i className="fa fa-user" />
                     <input
+                      value={email}
+                      onChange={(e) => {setEmail(e.target.value)}}
                       type="text"
                       id="txtLoginName"
                       className="form-control"
@@ -55,6 +95,8 @@ const Login = () => {
                   <div className="input-icon">
                     <i className="fa fa-lock" />
                     <input
+                      value={password}
+                      onChange={(e) => {setPassword(e.target.value)}}
                       type="password"
                       id="txtLoginPassword"
                       className="form-control"
@@ -79,7 +121,7 @@ const Login = () => {
                       type="button"
                       style={{ minWidth: 220 }}
                       id="btnLogin"
-                      onclick="login();"
+                      onClick={handleLogin}
                       className="btn btn-3 btn-mua-ve"
                     >
                       Đăng nhập bằng tài khoản
@@ -263,7 +305,7 @@ const Login = () => {
                   <div className="form-group">
                     <button
                       type="button"
-                      onclick="dangKy();"
+                      
                       className="btn btn-3 btn-mua-ve"
                     >
                       Đăng ký
