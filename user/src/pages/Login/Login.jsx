@@ -6,11 +6,12 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Header from "../../components/Header/Header";
+import {PHONE_REGEX, DATE_REGEX, EMAIL_REGEX} from "../../constants";
 
 const schema = yup
   .object({
     fullName: yup.string().required("Họ tên không được để trống"),
-    email: yup.string().required("Email không được để trống"),
+    email: yup.string().required("Email không được để trống").matches(EMAIL_REGEX, "Email không hợp lệ"),
     password: yup
       .string()
       .required("Mật khẩu không được để trống")
@@ -19,6 +20,8 @@ const schema = yup
       .string()
       .required("Xác nhận mật khẩu không được để trống")
       .oneOf([yup.ref("password"), null], "Mật khẩu không khớp"),
+    phoneNumber: yup.string().matches(PHONE_REGEX, "Số điện thoaị không hợp lệ"),
+    dateOfBirth: yup.string().matches(DATE_REGEX, "Ngày sinh không hợp lệ")
   })
   .required();
 
@@ -269,6 +272,11 @@ const Login = () => {
               <div className="form-group">
                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-16 margin-bottom-10">
                   <label className="control-label font-16">Ngày sinh</label>
+                  {errors?.dateOfBirth && (
+                    <span className="d-block color-red">
+                      {errors?.dateOfBirth?.message}
+                    </span>
+                  )}
                   <div className="input-icon">
                     <i className="fa fa-calendar" />
                     <input
@@ -313,6 +321,11 @@ const Login = () => {
               <div className="form-group">
                 <div className="col-lg-8 col-md-8 col-sm-8 col-xs-16 margin-bottom-10">
                   <label className="control-label font-16">Số điện thoại</label>
+                  {errors?.phoneNumber && (
+                    <span className="d-block color-red">
+                      {errors?.phoneNumber?.message}
+                    </span>
+                  )}
                   <div className="input-icon">
                     <i className="fa fa-phone-square" />
                     <input
