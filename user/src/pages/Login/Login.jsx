@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Header from "../../components/Header/Header";
 import {PHONE_REGEX, DATE_REGEX, EMAIL_REGEX} from "../../constants";
+import LoginForm from "../../components/LoginForm";
 
 const schema = yup
   .object({
@@ -25,9 +26,10 @@ const schema = yup
   })
   .required();
 
-const Login = () => {
+const Login = ({currentUser}) => {
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState("login");
+
   const {
     register,
     handleSubmit,
@@ -67,7 +69,7 @@ const Login = () => {
 
   return (
     <>
-      <Header />
+      <Header  currentUser={currentUser} />
       <div className="container">
         {/* TABS */}
         <div
@@ -102,75 +104,8 @@ const Login = () => {
             className="tab-content font-family-san font-16"
             style={{ backgroundColor: "#fff" }}
           >
-            <div
-              className={
-                activeTab === "login"
-                  ? "tab-pane fade in active"
-                  : "tab-pane fade"
-              }
-              id="login"
-            >
-              <div className="form-group">
-                <div
-                  id="error-status"
-                  className="col-md-16 margin-bottom-10"
-                ></div>
-              </div>
-              <div className="clearfix" />
-              <div className="form-group">
-                <div className="col-md-16 margin-bottom-10">
-                  <label className="control-label font-16">Email</label>
-                  <div className="input-icon">
-                    <i className="fa fa-user" />
-                    <input
-                      type="text"
-                      id="txtLoginName"
-                      className="form-control"
-                      placeholder="Email"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="clearfix" />
-              <div className="form-group">
-                <div className="col-md-16 margin-bottom-20">
-                  <label className="control-label font-16">Mật khẩu</label>
-                  <div className="input-icon">
-                    <i className="fa fa-lock" />
-                    <input
-                      type="password"
-                      id="txtLoginPassword"
-                      className="form-control"
-                      placeholder="Mật khẩu"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="clearfix" />
-              <div className="form-group">
-                <div className="col-md-16 margin-bottom-20">
-                  <a href="#doimatkhau-pop-up" className="fancybox-fast-view">
-                    Quên mật khẩu?
-                  </a>
-                </div>
-              </div>
-              <div className="clearfix" />
-              <div className="form-group">
-                <div className="col-md-16 text-center">
-                  <div className="form-group">
-                    <button
-                      type="button"
-                      style={{ minWidth: 220 }}
-                      id="btnLogin"
-                      className="btn btn-3 btn-mua-ve"
-                    >
-                      Đăng nhập bằng tài khoản
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="clearfix" />
-            </div>
+            <LoginForm activeTab={activeTab} />
+          </div>
             <form
               onSubmit={handleSubmit(handleRegister)}
               className={
@@ -397,8 +332,7 @@ const Login = () => {
           </div>
         </div>
         {/* END TABS */}
-      </div>
-    </>
+      </>
   );
 };
 
