@@ -1,3 +1,29 @@
 .main {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.ant-carousel .slick-dots li {
+  width: 18px;
+  height: 18px;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: #6f7a7c;
+}
+
+.ant-carousel .slick-dots li button {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c9cdce;
+  border-radius: 100% !important;
+}
+
+.movie {
+  &__title {
+    a {
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
 }

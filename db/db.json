@@ -41,15 +41,15 @@
     },
     {
       "id": 4,
-      "name": "Titanic",
-      "slug": "titanic",
+      "name": "Biệt Đội Rất Ổn",
+      "slug": "biet-doi-rat-on",
       "categoryId": 2,
       "times": 125,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "trailer": "https://www.youtube.com/embed/8lYocxcAB6I",
       "premieres": "08/02/2023",
       "images": [
-        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f02%2ftitanic-094654-020233-76.jpg"
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f03%2f16%2fpt%2Dbdro%2D101102%2D160323%2D73.jpg"
       ]
     },
     {
@@ -63,6 +63,32 @@
       "premieres": "07/03/2023",
       "images": [
         "https://files.betacorp.vn/files/media%2fimages%2f2023%2f02%2f09%2fz4095958227846-f20070b4efe20292b922f81421e88811-141654-090223-26.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Những Đứa Trẻ Trong Sương",
+      "slug": "nhung-dua-tre-trong-suong",
+      "categoryId": 4,
+      "times": 125,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/JYgxCM1q6FE",
+      "premieres": "07/03/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f03%2f10%2funtitled%2D1%2D095612%2D100323%2D96.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Shazam! Cơn thịnh nộ của các Vị Thần",
+      "slug": "shazam",
+      "categoryId": 4,
+      "times": 125,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "trailer": "https://www.youtube.com/embed/JYgxCM1q6FE",
+      "premieres": "07/03/2023",
+      "images": [
+        "https://files.betacorp.vn/files/media%2fimages%2f2023%2f03%2f15%2f400x633%2D114641%2D150323%2D15.png"
       ]
     }
   ],
@@ -88,5 +114,16 @@
       "name": "Gia đình"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "fullName": "Admin",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "dateOfBirth": "14/12/2200",
+      "sex": "2",
+      "phoneNumber": "03",
+      "id": 1
+    }
+  ]
 }
